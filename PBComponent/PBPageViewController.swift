@@ -134,7 +134,9 @@ class PBPageViewController: UIPageViewController,UIPageViewControllerDataSource 
         }
         self.view.removeFromSuperview()
         self.removeFromParentViewController()
-        UIApplication.shared.setStatusBarHidden(false, with: .none)
+//        UIApplication.shared.setStatusBarHidden(false, with: .none)
+        
+        
     }
     
     /// 隐藏进度条和保存和分享等控件
@@ -197,7 +199,7 @@ class PBPageViewController: UIPageViewController,UIPageViewControllerDataSource 
     
     //MARK: public function
     public func showInViewController(viewController :UIViewController) {
-        UIApplication.shared.setStatusBarHidden(true, with: .none)
+//        UIApplication.shared.setStatusBarHidden(true, with: .none)
         viewController.addChildViewController(self)
         viewController.view.addSubview(self.view)
         UIView.animate(withDuration: animationDuration) {
@@ -205,6 +207,7 @@ class PBPageViewController: UIPageViewController,UIPageViewControllerDataSource 
         }
         
     }
+    
     
     //MARK: UIPageViewControllerDelegate
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
