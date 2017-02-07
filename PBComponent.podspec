@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "PBComponent"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "图片预览控件"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/BuffaloBoyHu/PBComponent.git", :tag => "#{s.version}", :commit => "d00bbf9f0205efe531853308f65917871be864d5" }
+  s.source = { :git => "https://github.com/BuffaloBoyHu/PBComponent.git", :tag => "#{s.version}" } 
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
