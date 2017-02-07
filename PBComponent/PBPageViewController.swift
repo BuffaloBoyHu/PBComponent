@@ -188,12 +188,12 @@ class PBPageViewController: UIPageViewController,UIPageViewControllerDataSource 
     //MARK: private function
     @objc fileprivate func didFinishSavingPhoto(image:UIImage,error:NSError?,info : Any) {
         if error  == nil {
-            let alertView : UIAlertView = UIAlertView.init(title: "保存成功", message: nil, delegate: nil, cancelButtonTitle: "确定")
-            alertView.show()
+//            let alertView : UIAlertView = UIAlertView.init(title: "保存成功", message: nil, delegate: nil, cancelButtonTitle: "确定")
+//            alertView.show()
             
         }else {
-            let alertView : UIAlertView = UIAlertView.init(title: "保存失败", message: nil, delegate: nil, cancelButtonTitle: "确定")
-            alertView.show()
+//            let alertView : UIAlertView = UIAlertView.init(title: "保存失败", message: nil, delegate: nil, cancelButtonTitle: "确定")
+//            alertView.show()
         }
     }
     
