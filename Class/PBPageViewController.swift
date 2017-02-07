@@ -32,7 +32,7 @@ public class PBPageViewController: UIPageViewController,UIPageViewControllerData
     var progressLabel = UILabel.init() // 进度
     var abstractView = UITextView.init() // 简介
     var reLayoutSubView :(() -> Void)? //重新布局保存和分享按钮等位置
-    override var prefersStatusBarHidden: Bool{return self.hideStatusBar}
+//    override var prefersStatusBarHidden: Bool{return self.hideStatusBar}
     
     public init(sourceData :NSArray?,currentPhotoUrl:String,showStyle :PBStyle) {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: [UIPageViewControllerOptionInterPageSpacingKey : 20])
