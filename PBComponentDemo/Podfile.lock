@@ -1,0 +1,17 @@
+PODS:
+  - PBComponent (0.0.1):
+    - SDWebImage
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - PBComponent (~> 0.0.1)
+
+SPEC CHECKSUMS:
+  PBComponent: ab1272409b4e712f1e8a5be7f2c624ed7766e170
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: d49a7774d7073252f8e92822dfe47acb87f17810
+
+COCOAPODS: 1.2.0

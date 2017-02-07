@@ -1,0 +1,6 @@
+framework module PBComponent {
+  umbrella header "PBComponent-umbrella.h"
+
+  export *
+  module * { export * }
+}

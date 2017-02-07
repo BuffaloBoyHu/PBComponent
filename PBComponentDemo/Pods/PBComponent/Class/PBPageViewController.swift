@@ -32,9 +32,9 @@ public class PBPageViewController: UIPageViewController,UIPageViewControllerData
     var progressLabel = UILabel.init() // 进度
     var abstractView = UITextView.init() // 简介
     var reLayoutSubView :(() -> Void)? //重新布局保存和分享按钮等位置
-    override var prefersStatusBarHidden: Bool{return self.hideStatusBar}
+//    override var prefersStatusBarHidden: Bool{return self.hideStatusBar}
     
-    public init(sourceData :NSArray?,currentPhotoUrl:String,showStyle :PBStyle) {
+   public init(sourceData :NSArray?,currentPhotoUrl:String,showStyle :PBStyle) {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: [UIPageViewControllerOptionInterPageSpacingKey : 20])
         self.sourceData = sourceData
         self.currentIndex = (self.sourceData?.index(of: currentPhotoUrl))!
@@ -212,7 +212,7 @@ public class PBPageViewController: UIPageViewController,UIPageViewControllerData
     }
     
     //MARK: UIPageViewControllerDelegate
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         var index = self.childArray?.index(of: viewController)
         let count = (self.childArray?.count)! - 1
         if index! >= count || index! == NSNotFound {
@@ -223,7 +223,7 @@ public class PBPageViewController: UIPageViewController,UIPageViewControllerData
         
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         var index = self.childArray?.index(of: viewController)
         if index! <= 0 || index! == NSNotFound {
             return nil

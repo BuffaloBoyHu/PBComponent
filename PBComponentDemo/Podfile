@@ -1,0 +1,25 @@
+source 'https://github.com/BuffaloBoyHu/SpecsTest.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+project 'PBComponentDemo.xcodeproj'
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'PBComponentDemo' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'PBComponent', '~> 0.0.1'
+
+  target 'PBComponentDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PBComponentDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
