@@ -1,5 +1,4 @@
 source 'https://github.com/BuffaloBoyHu/PBComponent.git'
-source 'https://github.com/CocoaPods/Specs.git'
 
 inhibit_all_warnings!
 use_frameworks!
@@ -14,7 +13,8 @@ target 'PBComponentDemo' do
   use_frameworks!
 
   # Pods for PBComponentDemo
-
+  pod 'PBComponent', '~> 0.0.1'
+  
   target 'PBComponentDemoTests' do
     inherit! :search_paths
     # Pods for testing
